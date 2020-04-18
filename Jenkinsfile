@@ -10,10 +10,10 @@ pipeline {
             '''
         }
     }
-	stage(‘Lint HTML’){
-      steps {
-        sh ‘tidy -q -e *.html’
-      }
+	stage('Lint HTML') {
+        steps {
+            sh 'tidy -q -e *.html'
+        }
     }
   }
 }
